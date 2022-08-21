@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "6780f13e-f2a9-4228-9778-5dbc99874713",
+		"name": "produkty API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19361307"
+	},
+	"item": [
+		{
+			"name": "get-all-items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://produkty.herokuapp.com/get-all-items/2022-04-08?department=alkohol",
+					"protocol": "http",
+					"host": [
+						"produkty",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"get-all-items",
+						"2022-04-08"
+					],
+					"query": [
+						{
+							"key": "department",
+							"value": "alkohol"
+						},
+						{
+							"key": "token",
+							"value": "token",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-items-like",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://produkty.herokuapp.com/get-items-like?pseudo_name=Chlieb",
+					"protocol": "http",
+					"host": [
+						"produkty",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"get-items-like"
+					],
+					"query": [
+						{
+							"key": "pseudo_name",
+							"value": "Chlieb"
+						},
+						{
+							"key": "department",
+							"value": "zdravie-a-krasa",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-item-by-ean",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://produkty.herokuapp.com/get-item-by-ean/2022-01-25?ean=0000000016995",
+					"protocol": "http",
+					"host": [
+						"produkty",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"get-item-by-ean",
+						"2022-01-25"
+					],
+					"query": [
+						{
+							"key": "ean",
+							"value": "0000000016995"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-item-by-name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://produkty.herokuapp.com/get-item-by-name/2022-01-25?name=Chlieb pšenično ražný konzumný 1000 g",
+					"protocol": "http",
+					"host": [
+						"produkty",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"get-item-by-name",
+						"2022-01-25"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Chlieb pšenično ražný konzumný 1000 g"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-item-by-ean-between",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://produkty.herokuapp.com/get-item-by-ean-between/2022-01-01/2022-04-10?ean=0000000016995",
+					"protocol": "http",
+					"host": [
+						"produkty",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"get-item-by-ean-between",
+						"2022-01-01",
+						"2022-04-10"
+					],
+					"query": [
+						{
+							"key": "ean",
+							"value": "0000000016995"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-item-by-name-between",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://produkty.herokuapp.com/get-item-by-name-between/2022-01-01/2022-01-25?name=Chlieb pšenično ražný konzumný 1000 g",
+					"protocol": "http",
+					"host": [
+						"produkty",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"get-item-by-name-between",
+						"2022-01-01",
+						"2022-01-25"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Chlieb pšenično ražný konzumný 1000 g"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-item-by-ean-compare",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://produkty.herokuapp.com/get-item-by-ean/compare/2022-01-02/2022-04-10?ean=5051007116114",
+					"protocol": "http",
+					"host": [
+						"produkty",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"get-item-by-ean",
+						"compare",
+						"2022-01-02",
+						"2022-04-10"
+					],
+					"query": [
+						{
+							"key": "ean",
+							"value": "5051007116114"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-item-by-name-compare",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://produkty.herokuapp.com/get-item-by-name/compare/2022-01-02/2022-04-10?name=Chlieb pšenično ražný konzumný 1000 g",
+					"protocol": "http",
+					"host": [
+						"produkty",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"get-item-by-name",
+						"compare",
+						"2022-01-02",
+						"2022-04-10"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Chlieb pšenično ražný konzumný 1000 g"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
